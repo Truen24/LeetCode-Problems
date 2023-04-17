@@ -1,17 +1,14 @@
-package com.company;
-
+package Easy;
 import java.util.HashMap;
 
-public class Main {
-
+public class ValidAnagram {
     public static void main(String[] args) {
-//        Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-//        An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
-//        typically using all the original letters exactly once.
+
         String s = "anagram";
         String t = "nagaram";
-        System.out.println("Is this a valid anagram? True or false - " + isAnagram(s, t));
 
+        System.out.println("True or false: " + isAnagram(s, t));
+        
     }
 
     public static boolean isAnagram(String s, String t) {
@@ -51,9 +48,9 @@ public class Main {
             }else {
                 return false;
             }
-
+    
         }
         return true;
     }
-
+    
 }
